@@ -1,0 +1,23 @@
+{
+  "name": "openapi-schema",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "directories": {
+    "example": "example"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dredd-api-with-example": "dredd example/api-with-example.yml http://127.0.0.1:4010",
+    "dredd-petstore": "dredd example/petstore.yml http://127.0.0.1:4010",
+    "dredd-link-example": "dredd example/link-example.yml http://127.0.0.1:4010",
+    "dredd-callback-example": "dredd example/callback-example.yml http://127.0.0.1:4010",
+    "dredd-petstore-expanded": "dredd example/petstore-expanded.yml http://127.0.0.1:4010",
+    "dredd-uspto": "dredd example/uspto.yml http://127.0.0.1:4010"
+  },
+  "author": "Yuki Matsuyama <yuki.matsuyama0123@gmail.com>",
+  "license": "ISC",
+  "dependencies": {
+    "dredd": "^12.2.0"
+  }
+}
