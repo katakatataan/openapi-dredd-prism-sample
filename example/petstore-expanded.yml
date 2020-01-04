@@ -26,6 +26,9 @@ paths:
           in: query
           description: tags to filter by
           required: false
+          example:
+              - 'dog'
+              - 'cat'
           style: form
           schema:
             type: array
@@ -35,6 +38,7 @@ paths:
           in: query
           description: maximum number of results to return
           required: false
+          example: 10
           schema:
             type: integer
             format: int32
@@ -84,6 +88,7 @@ paths:
         - name: id
           in: path
           description: ID of pet to fetch
+          example: 123123
           required: true
           schema:
             type: integer
@@ -109,6 +114,7 @@ paths:
           in: path
           description: ID of pet to delete
           required: true
+          example: 123123211
           schema:
             type: integer
             format: int64
